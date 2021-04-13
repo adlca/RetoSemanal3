@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opcion 02 - ADLCA</title>
+    <style>
+        * {
+            margin: 0;
+            /* border: 1px solid green; */
+            border: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h2 {
+            color: #a5baba;
+            text-align: center;
+            padding: 30px;
+            padding-bottom: 40px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: #2d0783;
+            padding: 10px 6px;
+            font-size: 12px;
+
+        }
+
+       
+
+        .menu-item {
+            background-color: #2d0783;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .menu-item a:hover {
+            background-color: greenyellow;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .item-container {
+            padding: 10px;
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            margin: 5px;
+            line-height: 20px;
+            font-size: 12px;
+        }
+
+        .item-detail {
+            height: 230px;
+        }
+
+        .item-detail img {
+            width: 100%;
+        }
+
+        .item-buy-detail {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom:8px;
+        }
+
+        .item-buy-detail p{
+            background-color: #ced9d7;
+            border-radius: 10px;
+            padding: 2px 5px;
+            margin-top: 20px;
+        }
+
+        .item-menu {
+            background-color: #059a99;
+            color: white;
+            font-size: 9px;
+            padding: 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        
+        @media screen and (max-width:480px) {
+            .menu {
+                flex-direction: column;
+                text-align: center;
+                height: 120px;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <div>
+            <a class="menu-item" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud" width="14"
+                    height="14" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-12"></path>
+                </svg>
+
+            </a>
+        </div>
+        <div>
+            <a class="menu-item" ref="#">CAMERAS</a>
+        </div>
+        <div>
+            <a class="menu-item" ref="#">ABOUT</a>
+        </div>
+        <div>
+            <a class="menu-item" ref="#">CONTACT</a>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <h2>Cameras</h2>
+        </div>
+        <div class="content">
+            <div class="item-container">
+                <div class="item-detail">
+                    <img src="./assets/a1.jpg" alt="">
+                    <h4>Smartphone</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="item-buy-detail">
+                    <div>
+                        <p> Price 450 €</p>
+                    </div>
+                    <div>
+                        <p>In Stock</p>
+                    </div>
+
+                </div>
+                <div class="item-menu">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check"
+                            width="20" height="20" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <path d="M9 12l2 2l4 -4"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p> ADD TO CART</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-container">
+                <div class="item-detail">
+                    <img src="./assets/a2.jpg" alt="">
+                    <h4>Some Old Polaroid Camera That Produces Hipstery Efects</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="item-buy-detail">
+                    <div>
+                        <p> Price 450 €</p>
+                    </div>
+                    <div>
+                        <p>In Stock</p>
+                    </div>
+
+                </div>
+                <div class="item-menu">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check"
+                            width="20" height="20" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <path d="M9 12l2 2l4 -4"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p> ADD TO CART</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-container">
+                <div class="item-detail">
+                    <img src="./assets/a3.jpg" alt="">
+                    <h4>GoPro Hero 4 Silver</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="item-buy-detail">
+                    <div>
+                        <p> Price 450 €</p>
+                    </div>
+                    <div>
+                        <p>In Stock</p>
+                    </div>
+
+                </div>
+                <div class="item-menu">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check"
+                            width="20" height="20" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <path d="M9 12l2 2l4 -4"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p> ADD TO CART</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="item-container">
+                <div class="item-detail">
+                    <img src="./assets/a4.jpg" alt="">
+                    <h4>Nikon D60</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+
+                <div class="item-buy-detail">
+                    <div>
+                        <p> Price 450 €</p>
+                    </div>
+                    <div>
+                        <p>In Stock</p>
+                    </div>
+
+                </div>
+                <div class="item-menu">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check"
+                            width="20" height="20" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <path d="M9 12l2 2l4 -4"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p> ADD TO CART</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="item-container">
+                <div class="item-detail">
+                    <img src="./assets/a5.jpg" alt="">
+                    <h4>Canon PowerShot g7</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="item-buy-detail">
+                    <div>
+                        <p> Price 450 €</p>
+                    </div>
+                    <div>
+                        <p>In Stock</p>
+                    </div>
+
+                </div>
+                <div class="item-menu">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check"
+                            width="20" height="20" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <path d="M9 12l2 2l4 -4"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p> ADD TO CART</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-container">
+                <div class="item-detail">
+                    <img src="./assets/a6.jpg" alt="">
+                    <h4>Kodak Camera C100</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="item-buy-detail">
+                    <div>
+                        <p> Price 450 €</p>
+                    </div>
+                    <div>
+                        <p>In Stock</p>
+                    </div>
+
+                </div>
+                <div class="item-menu">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check"
+                            width="20" height="20" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <path d="M9 12l2 2l4 -4"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p> ADD TO CART</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
